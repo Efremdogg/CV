@@ -3,52 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efrem Raimondo - CV</title>
+    <title>Efrem Raimondo - Professional CV</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
+            background-color: #f4f6f9;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            text-align: center;
+            color: #333;
         }
 
         .container {
-            background-color: #ffffff;
-            max-width: 900px;
+            max-width: 1200px;
             width: 100%;
-            padding: 30px;
+            background-color: #fff;
             border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
         }
 
-        h1 {
-            font-size: 3em;
-            color: #333333;
-            margin-bottom: 10px;
+        .header {
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        h2 {
-            font-size: 2em;
+        .header img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border: 4px solid #fff;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        .header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
             color: #007BFF;
-            margin: 20px 0 10px;
+            margin-bottom: 20px;
             border-bottom: 3px solid #007BFF;
-            display: inline-block;
             padding-bottom: 5px;
+            display: inline-block;
         }
 
-        p, li {
-            color: #555555;
+        .section p, .section li {
+            margin: 5px 0;
             line-height: 1.8;
-            margin: 5px 0;
-        }
-
-        .contact p, .personal-info p {
-            margin: 5px 0;
         }
 
         ul {
@@ -56,30 +80,34 @@
             padding: 0;
         }
 
-        .skills, .languages {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
+        .contact-info, .personal-info {
             margin-bottom: 20px;
         }
 
+        .contact-info p, .personal-info p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .skills, .languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
         .skills li, .languages li {
-            background-color: #f9f9f9;
+            background-color: #eef2f6;
             padding: 10px 15px;
             border-radius: 10px;
             border: 1px solid #ddd;
-            min-width: 120px;
+            flex: 1 1 30%;
             text-align: center;
-        }
-
-        .links ul {
-            padding: 0;
+            font-size: 1em;
+            font-weight: 500;
         }
 
         .links ul li {
             margin: 10px 0;
-            font-size: 1.2em;
         }
 
         .links a {
@@ -87,6 +115,7 @@
             color: #007BFF;
             font-weight: bold;
             transition: color 0.3s, transform 0.3s;
+            font-size: 1.1em;
         }
 
         .links a:hover {
@@ -95,114 +124,163 @@
         }
 
         .footer {
-            margin-top: 30px;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+            color: #555;
             font-size: 0.9em;
-            color: #777777;
+            border-top: 1px solid #ddd;
         }
 
-        /* Responsive Design */
+        .footer span {
+            font-weight: bold;
+        }
+
         @media (max-width: 768px) {
-            .skills, .languages {
+            .header {
                 flex-direction: column;
+                text-align: center;
             }
 
-            h1 {
-                font-size: 2.5em;
+            .header img {
+                margin-bottom: 20px;
             }
 
-            h2 {
-                font-size: 1.8em;
+            .skills li, .languages li {
+                flex: 1 1 100%;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Efrem Raimondo</h1>
-
-        <div class="contact">
-            <p><strong>Address:</strong> 01630, Sergy, France</p>
-            <p><strong>Phone:</strong> +41.782399260</p>
-            <p><strong>Email:</strong> efrem.raimondo@euruni.edu</p>
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>Efrem Raimondo</h1>
+                <p>Business Administration Student</p>
+            </div>
+            <!-- Replace 'path/to/your/image.jpeg' with the actual hosted image URL -->
+            <img src="path/to/your/image.jpeg" alt="Efrem Raimondo">
         </div>
 
-        <div class="section">
-            <h2>Summary</h2>
-            <p>Highly motivated young professional with a strong work ethic, adaptability, and exceptional interpersonal skills. Experienced in electrical and mechanical systems, adept at troubleshooting and diagnostics, and skilled in installing, testing, and maintaining equipment.</p>
-        </div>
+        <!-- Content -->
+        <div class="content">
+            <!-- Contact Information -->
+            <div class="contact-info section">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> 01630, Sergy, France</p>
+                <p><strong>Phone:</strong> +41.782399260</p>
+                <p><strong>Email:</strong> efrem.raimondo@euruni.edu</p>
+            </div>
 
-        <div class="section">
-            <h2>Skills</h2>
-            <ul class="skills">
-                <li>Electrical Troubleshooting</li>
-                <li>Schematic Reading</li>
-                <li>Hydraulic Systems</li>
-                <li>Pneumatic Systems</li>
-                <li>Computer-Aided Design</li>
-                <li>Rapid Prototyping</li>
-                <li>Troubleshooting and Diagnosis</li>
-                <li>Electronic Installations</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Languages</h2>
-            <ul class="languages">
-                <li>Italian: First Language</li>
-                <li>English: Proficient (C2)</li>
-                <li>French: Proficient (C2)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Personal Information</h2>
-            <div class="personal-info">
+            <!-- Personal Information -->
+            <div class="personal-info section">
+                <h2>Personal Information</h2>
                 <p><strong>Date of Birth:</strong> 01/14/2004</p>
                 <p><strong>Gender:</strong> Male</p>
                 <p><strong>Nationality:</strong> Italian</p>
                 <p><strong>Driving License:</strong> B</p>
             </div>
+
+            <!-- Summary -->
+            <div class="section">
+                <h2>Summary</h2>
+                <p>Highly motivated professional with a solid background in electrical and mechanical systems. He has extensive experience in troubleshooting, diagnostics, and maintaining high-performance equipment, as well as creating schematics and working with CAD software, hydraulic, and pneumatic systems. Fluent in Italian, English, and French, he thrives in diverse environments and excels at building meaningful connections. Currently pursuing a bachelor’s degree in business administration, combineing his technical expertise with business knowledge, positioning himself as a valuable asset to multidisciplinary teams and impactful projects.</p>
+            </div>
+
+            <!-- Skills -->
+            <div class="section">
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li>Electrical Troubleshooting</li>
+                    <li>Schematic Reading</li>
+                    <li>Hydraulic Systems</li>
+                    <li>Pneumatic Systems</li>
+                    <li>Computer-Aided Design</li>
+                    <li>Rapid Prototyping</li>
+                    <li>Troubleshooting and Diagnosis</li>
+                </ul>
+            </div>
+
+            <!-- Languages -->
+            <div class="section">
+                <h2>Languages</h2>
+                <ul class="languages">
+                    <li>Italian: First Language</li>
+                    <li>English: Proficient (C2)</li>
+                    <li>French: Proficient (C2)</li>
+                </ul>
+            </div>
+
+            <!-- Education -->
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>EU Business School</strong>  (October 2022 - September 2025)
+                        <p><em>Bachelor of Business Administration - BBA</em></p>
+                        <p>Skills: Microsoft Office, ADA</p>
+                    </li>
+                    <li>
+                        <strong>University of London</strong>  (2021 - 2022)
+                        <p><em>Bachelor of Applied Science - BASc</em></p>
+                        <p>Grade: A | Skills: Chemical Disposal, Chemistry</p>
+                    </li>
+                    <li>
+                        <strong>Bredon School</strong>  (2020 - 2022)
+                        <p><em>A-Level</em> in Chemistry, Photography, Cisco, Math</p>
+                        <p>Grades: A, B, A+, A-</p>
+                    </li>
+                    <li>
+                        <strong>Shapwick School</strong> (2017 - 2020)
+                        <p><em>GCSE</em></p>
+                        <p>Grades: B, A+, A+, A, B-</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Experience -->
+            <div class="section">
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        <strong>Founder & Director</strong> (September 2017 - 2023)
+                        <p><em>Electronic&co</em> Online Shop</p>
+                        <p>London, United Kingdom</p>
+                    </li>
+                    <li>
+                        <strong>Mechatronics Technician - CERN, Switzerland</strong> (May 2024 - September 2024)
+                        <ul>
+                            <li>Created schematics for mechatronics systems using CAD software.</li>
+                            <li>Troubleshot electrical, mechanical, and pneumatic systems.</li>
+                            <li>Performed maintenance and repair of automated robotic systems.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Technician Apprentice - CERN, Switzerland</strong> (June 2023)
+                        <ul>
+                            <li>Installed electrical wiring and fixtures.</li>
+                            <li>Replaced worn or damaged parts.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Links -->
+            <div class="section links">
+                <h2>Links</h2>
+                <ul>
+                    <li><strong>LinkedIn:</strong> <a href="https://fr.linkedin.com/in/efrem-raimondo-293a5b208" target="_blank">Visit LinkedIn</a></li>
+                    <li><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Efrem-Raimondo" target="_blank">Visit ResearchGate</a></li>
+                    <li><strong>YouTube:</strong> <a href="https://m.youtube.com/@efremraimondo" target="_blank">Visit YouTube</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Mechatronics Technician - CERN, Switzerland</strong> (May 2024 - September 2024)
-                    <ul>
-                        <li>Created schematics for mechatronics systems using CAD software.</li>
-                        <li>Troubleshot electrical, mechanical, and pneumatic issues.</li>
-                        <li>Performed maintenance and repair of automated robotic systems.</li>
-                    </ul>
-                </li>
-                <li><strong>Technician Apprentice - CERN, Switzerland</strong> (June 2023)
-                    <ul>
-                        <li>Installed electrical wiring and fixtures.</li>
-                        <li>Replaced worn or damaged parts.</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bachelor in Business Administration</strong> - EU Business School, Switzerland (Ongoing)</li>
-                <li><strong>A-Level:</strong> Mathematics, Science, Photography, CISCO (2022)</li>
-                <li><strong>GCSE:</strong> Mathematics, Science, Photography, English (2020)</li>
-            </ul>
-        </div>
-
-        <div class="section links">
-            <h2>Links</h2>
-            <ul>
-                <li><strong>LinkedIn:</strong> <a href="https://fr.linkedin.com/in/efrem-raimondo-293a5b208" target="_blank">Visit LinkedIn</a></li>
-                <li><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Efrem-Raimondo" target="_blank">Visit ResearchGate</a></li>
-                <li><strong>YouTube:</strong> <a href="https://m.youtube.com/@efremraimondo" target="_blank">Visit YouTube</a></li>
-            </ul>
-        </div>
-
+        <!-- Footer -->
         <div class="footer">
-            &copy; 2024 Efrem Raimondo. All rights reserved.
+            &copy; <span>2024 Efrem Raimondo.</span> All rights reserved.
         </div>
     </div>
 </body>
