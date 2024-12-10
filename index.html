@@ -161,6 +161,48 @@
             .container {
                 padding: 15px;
             }
+               /* Responsive styles for iPhone */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                padding: 10px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header img {
+                height: 150px;
+                width: 150px;
+                margin-bottom: 15px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .skills li, .languages li {
+                flex: 1 1 100%;
+                font-size: 0.9em;
+            }
+
+            .footer {
+                font-size: 0.8em;
+                padding: 10px;
+            }
+       
     </style>
 </head>
 <body>
