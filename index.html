@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efrem Raimondo </title>
-   <meta name="description" content="Discover Efrem Raimondo’s professional profile." />
-
-    <!-- Favicon -->
-<link rel="icon" type="image/jpeg" href="https://imagizer.imageshack.com/img924/6202/UERa4w.jpg">
-    
-    </head>
-    
+    <title>Efrem Raimondo</title>
+    <meta name="description" content="Discover Efrem Raimondo’s professional profile." />
+    <link rel="icon" type="image/jpeg" href="https://imagizer.imageshack.com/img924/6202/UERa4w.jpg">
+</head>
     <style>
-        
-    body {
-       font-family: 'Arial', sans-serif;
-            background: black ;
+        body {
+            font-family: 'Arial', sans-serif;
+            background: black;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            color: #333;
+            color: black;
         }
 
         .container {
@@ -41,6 +36,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+    
         }
 
         .header img {
@@ -53,7 +49,7 @@
 
         .header h1 {
             font-size: 3.5em;
-            
+            margin: 0;
         }
 
         .header p {
@@ -71,11 +67,11 @@
 
         .section h2 {
             font-size: 1.8em;
-            color: black;
             margin-bottom: 20px;
             border-bottom: 3px solid #007B;
             padding-bottom: 5px;
             display: inline-block;
+    
         }
 
         .section p, .section li {
@@ -88,15 +84,6 @@
             padding: 0;
         }
 
-        .contact-info, .personal-info {
-            margin-bottom: 20px;
-        }
-
-        .contact-info p, .personal-info p {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-
         .skills, .languages {
             display: flex;
             flex-wrap: wrap;
@@ -104,18 +91,13 @@
         }
 
         .skills li, .languages li {
-            background-color: #eef2f6;
+            background-color: #f8f9fa;
             padding: 10px 15px;
             border-radius: 10px;
             border: 1px solid #ddd;
-            flex: 1 1 30%;
             text-align: center;
             font-size: 1em;
             font-weight: 500;
-        }
-
-        .links ul li {
-            margin: 10px 0;
         }
 
         .links a {
@@ -123,7 +105,6 @@
             color: #007B;
             font-weight: bold;
             transition: color 0.3s, transform 0.3s;
-            font-size: 1.1em;
         }
 
         .links a:hover {
@@ -138,70 +119,48 @@
             color: #555;
             font-size: 0.9em;
             border-top: 1px solid #ddd;
+            position: relative;
         }
 
-        .footer span {
-            font-weight: bold;
+
+        .header img {
+            cursor: pointer;
+            transition: transform 0.3s ease;
         }
 
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                text-align: center;
-            }
+        .header img.book-icon {
+            content: url('https://imagizer.imageshack.com/img923/7897/Uo5xhK.png');
+            transform: scale(1.2);
+        }
 
-            .header img {
-                margin-bottom: 20px;
-            }
+        .hidden-link {
+            color: gray;
+            text-decoration: none;
+            pointer-events: none;
+        }
 
-            .skills li, .languages li {
-                flex: 1 1 100%;
-            }
-
-        /* Styles for smaller screens (iPhone) */
-        @media (max-width: 768px) {
-            body {
-                font-size: 14px;
-                padding: 10px;
-                background-color: black;
-            }
-
-            .header img {
-                height: 100px;
-                width: 100px;
-            }
-
-            .header h1 {
-                font-size: 24px;
-            }
-
-            .header p, .footer {
-                font-size: 12px;
-            }
-
-            .section h2 {
-                font-size: 20px;
-            }
-
-            .skills li, .languages li {
-                flex: 1 1 100%;
+        .footer.unlocked .hidden-link {
+            pointer-events: auto;
+            color: transparent;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <div>
-                <h1>Efrem RAIMONDO</h1>
-                <p>Business Administration Student</p>       
-               <ul>
-                         <li id="invisible-item" style="visibility: hidden;">This is an invisible item</li>
-                   </ul>
+        <div class="container"> 
+
+            <!-- Header -->
+           <div class="header">
+    <div class="header-text">
+        <h1>Efrem RAIMONDO</h1>
+        <p>Business Administration Student</p>
+    </div>
+    <div class="header-image">
+
+                <img src="https://imagizer.imageshack.com/img924/6202/UERa4w.jpg" alt="Efrem Raimondo" id="unlockImage" title="Efrem Rimondo">
             </div>
-            <!-- Replace 'path/to/your/image.jpeg' with the actual hosted image URL -->
-            <img src="https://imagizer.imageshack.com/img924/6202/UERa4w.jpg" alt="Efrem Raimondo">
-        </div>
+            </div>
+        
 
         <!-- Content -->
         <div class="content">
@@ -331,26 +290,64 @@
                     <li><strong>LinkedIn:</strong> <a href="https://fr.linkedin.com/in/efrem-raimondo-293a5b208" target="_blank">Visit LinkedIn</a></li>
                     <li><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Efrem-Raimondo" target="_blank">Visit ResearchGate</a></li>
                 </ul>
-            </div>
-        </div>
 
-        <!-- Footer -->
-        <div class="footer">
-    <a href="https://google.com" title="Visit Cookbook" class="invisible-link">
-        &copy; <span>2024 Efrem Raimondo.</span> All rights reserved.
-    </a>
-</div>
+     <!-- Footer -->
+     <div class="footer" id="footer">
+        &copy; <span>2024 Efrem Raimondo.</span> <span>All rights reserved.</span>
+        <a href="https://google.com" class="hidden-link" id="hiddenLink" title="Cookbook">Link</a>
+    </div>
 
-<style>
-    .invisible-link {
-        color: gray; /* Makes the link text invisible */
-        text-decoration: none; /* Removes underline */
-        display: inline-block; /* Keeps clickable area intact */
-    }
+    <script>
+        const footer = document.getElementById("footer");
+        const link = document.getElementById("hiddenLink");
+        const unlockImage = document.getElementById("unlockImage");
+        let step = 0;
+        let sequenceComplete = false;
+        let linkActive = false;
+        let iconTimeout;
 
-    .invisible-link:hover {
-        color: transparent; /* Keeps it invisible on hover */
-    }
-</style>
+        // Sequence of actions to unlock the link
+        const requiredClicks = 10;
+
+        // Handle clicks on the footer
+        footer.addEventListener("click", () => {
+            if (!sequenceComplete) {
+                step++;
+                if (step === requiredClicks) {
+                    sequenceComplete = true;
+                    unlockImage.classList.add("book-icon"); // Change image to book icon
+
+                    // Start 5-second timeout for clicking the icon
+                    iconTimeout = setTimeout(() => {
+                        if (!linkActive) {
+                            // Revert to original image if not clicked within 5 seconds
+                            unlockImage.classList.remove("book-icon");
+                            sequenceComplete = false;
+                            step = 0; // Reset sequence
+                        }
+                    }, 3000);
+                }
+            }
+        });
+
+        // Handle click on the image
+        unlockImage.addEventListener("click", () => {
+            if (sequenceComplete && !linkActive) {
+                linkActive = true;
+                clearTimeout(iconTimeout); // Clear the timeout if clicked within 5 seconds
+                link.href = "https://google.com"; // Set the href dynamically
+                link.target = "_blank"; // Open in a new tab
+                link.style.pointerEvents = "auto"; // Ensure it becomes clickable
+            } else if (!sequenceComplete) {
+            }
+        });
+
+        // Reset the sequence if the link is not unlocked after a short delay
+        footer.addEventListener("mouseleave", () => {
+            if (!sequenceComplete) {
+                setTimeout(() => (step = 0), 1000);
+            }
+        });
+    </script>
 </body>
 </html>
