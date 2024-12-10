@@ -6,7 +6,7 @@
     <title>Efrem Raimondo</title>
     <meta name="description" content="Discover Efrem Raimondo’s professional profile." />
     <link rel="icon" type="image/jpeg" href="https://imagizer.imageshack.com/img924/6202/UERa4w.jpg">
-
+</head>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -17,7 +17,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            color: black; /* Ensure readability */
+            color: black;
         }
 
         .container {
@@ -36,6 +36,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+    
         }
 
         .header img {
@@ -60,6 +61,29 @@
             padding: 40px;
         }
 
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #007B;
+            padding-bottom: 5px;
+            display: inline-block;
+    
+        }
+
+        .section p, .section li {
+            margin: 5px 0;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
         .skills, .languages {
             display: flex;
             flex-wrap: wrap;
@@ -76,6 +100,18 @@
             font-weight: 500;
         }
 
+        .links a {
+            text-decoration: none;
+            color:#0056b3 ;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .links a:hover {
+            color: #0056b3;
+            transform: scale(1.05);
+        }
+
         .footer {
             background-color: #f8f9fa;
             text-align: center;
@@ -83,50 +119,48 @@
             color: #555;
             font-size: 0.9em;
             border-top: 1px solid #ddd;
+            position: relative;
         }
 
-        /* Responsive styles for iPhone */
-        @media (max-width: 768px) {
-            .container {
+
+        .header img {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .header img.book-icon {
+            content: url('https://imagizer.imageshack.com/img923/7897/Uo5xhK.png');
+            transform: scale(1.2);
+        }
+
+        .hidden-link {
+            color: gray;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+        .footer.unlocked .hidden-link {
+            pointer-events: auto;
+            color: transparent;
+        }
+          @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+                padding: 10px;
                 max-width: 100%;
-                padding: 10px;
-                border-radius: 0;
-                box-shadow: none;
             }
 
-            .header {
-                flex-direction: column;
-                text-align: center;
+            h1 {
+                font-size: 24px;
             }
 
-            .header img {
-                height: 150px;
-                width: 150px;
-                margin-bottom: 15px;
+            p {
+                font-size: 12px;
             }
 
-            .header h1 {
-                font-size: 2em;
+            .container {
+                padding: 15px;
             }
-
-            .header p {
-                font-size: 1em;
-            }
-
-            .content {
-                padding: 20px;
-            }
-
-            .skills li, .languages li {
-                flex: 1 1 100%;
-                font-size: 0.9em;
-            }
-
-            .footer {
-                font-size: 0.8em;
-                padding: 10px;
-            }
-       
     </style>
 </head>
 <body>
