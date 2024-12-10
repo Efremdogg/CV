@@ -36,7 +36,7 @@
 
         .header {
             background: linear-gradient(135deg, #f3e7fd, #d3effe, #c5f2d0);
-            color: #black;
+            color: black;
             padding: 30px;
             display: flex;
             align-items: center;
@@ -71,7 +71,7 @@
 
         .section h2 {
             font-size: 1.8em;
-            color: #black;
+            color: black;
             margin-bottom: 20px;
             border-bottom: 3px solid #007B;
             padding-bottom: 5px;
@@ -336,8 +336,21 @@
 
         <!-- Footer -->
         <div class="footer">
-            &copy; <span>2024 Efrem Raimondo.</span> All rights reserved.
-        </div>
-    </div>
+    <a href="https://google.com" title="Visit Cookbook" class="invisible-link">
+        &copy; <span>2024 Efrem Raimondo.</span> All rights reserved.
+    </a>
+</div>
+
+<style>
+    .invisible-link {
+        color: gray; /* Makes the link text invisible */
+        text-decoration: none; /* Removes underline */
+        display: inline-block; /* Keeps clickable area intact */
+    }
+
+    .invisible-link:hover {
+        color: transparent; /* Keeps it invisible on hover */
+    }
+</style>
 </body>
 </html>
